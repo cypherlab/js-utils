@@ -1,0 +1,21 @@
+{
+  "name": "@cypherlab/js-utils",
+  "version": "0.0.0",
+  "description": "🔧 JS utils",
+  "author": "Louis Grellet <louis.grellet@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/cypherlab/js-utils",
+  "source": "src/index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r esm"
+  },
+  "dependencies": {
+    "esm": "^3.2.25",
+    "object-resolve-path": "^1.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0"
+  }
+}
