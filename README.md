@@ -31,12 +31,6 @@ Options:
 
 ## Test
 
-Include a `.env` file at the root of the package folder containing :
-```
-APIKEY=YourGoogleMapKey
-```
-
-run test at the root of the lerna repo with
 ```
 npm run test
 ```
