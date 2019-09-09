@@ -6,6 +6,7 @@
   "license": "ISC",
   "repository": "https://github.com/cypherlab/js-utils",
   "source": "src/index.js",
+  "module": "src/index.js",
   "main": "index.js",
   "scripts": {
     "test": "mocha -r esm"
