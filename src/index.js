@@ -1,6 +1,5 @@
-import { default as _compact} from 'lodash/compact'
-import { default as _uniq} from 'lodash/uniq'
-import objectResolvePath from 'object-resolve-path'
+import { default as _compact } from 'lodash/compact'
+import { default as _uniq } from 'lodash/uniq'
 
 
 export const asArray = (input, { delim = ',', trim = true, uniq = true, compact = true } = {}) => {
@@ -14,6 +13,3 @@ export const asArray = (input, { delim = ',', trim = true, uniq = true, compact 
 
   return output
 }
-
-export const resolvePath = objectResolvePath
-
