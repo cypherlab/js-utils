@@ -1,5 +1,7 @@
 import { should, expect, assert } from 'chai'
-import { asArray } from '../src'
+import { _ , asArray } from '../src'
+
+
 
 should()
 
@@ -8,6 +10,29 @@ should()
 describe('@cypherlab/js-utils', () => {
 
   before(done => done())
+
+
+  describe('_', () => {
+
+    it('_.filter()', async () => {
+      expect(_.filter(["foo", "bar"], i => i === "foo")).to.have.ordered.members([ 'foo' ])
+    })
+
+    it('_.uniq()', async () => {
+      expect(_.uniq(["foo", "foo"])).to.have.ordered.members([ 'foo' ])
+    })
+
+    it('_.compact()', async () => {
+      expect(_.compact(["foo", undefined, "", "bar"], i => i === "foo")).to.have.ordered.members([ 'foo', 'bar' ])
+    })
+
+    it('_.get()', async () => {
+      expect(_.get({ foo: { bar: 'baz' } }, "foo.bar")).to.equal('baz')
+      expect(_.get({ foo: { bar: 'baz' } }, "foo[bar]")).to.equal('baz')
+    })
+
+  })
+
 
   describe('asArray', () => {
 
