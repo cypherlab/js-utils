@@ -1,7 +1,6 @@
 export const _ = {
     find: (array, cb) => array.find(cb)
   , filter: (array, cb) => array.filter(cb)
-  , debounce: (array, cb) => array.debounce(cb)
   , map: (array, cb) => array.map(cb)
   , compact: (array) => array.filter(Boolean)
   , uniq: (array) => [...new Set(array)]

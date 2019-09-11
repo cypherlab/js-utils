@@ -32,6 +32,6 @@ Options:
 ## Test
 
 ```
-npm run test
+(npm|yarn) run test
 ```
 
