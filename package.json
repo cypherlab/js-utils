@@ -5,9 +5,9 @@
   "author": "Louis Grellet <louis.grellet@gmail.com>",
   "license": "ISC",
   "repository": "https://github.com/cypherlab/js-utils",
+  "source": "src/index.js",
   "main": "index.js",
   "module": "src/index.js",
-  "source": "src/index.js",
   "scripts": {
     "release": "np",
     "test": "mocha -r esm"
